@@ -5,7 +5,7 @@ import { IoIosSearch } from "react-icons/io";
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100 my-16">
+            <div className="navbar bg-base-100 my-[50px]">
                 <div className="navbar-start lg:w-[41%] xl:w-[50%]">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
