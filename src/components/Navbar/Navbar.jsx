@@ -43,7 +43,7 @@ const Navbar = () => {
                             <input type="text" placeholder="Search" className="placeholder:text-base font-lexend placeholder:text-[rgba(21,11,43,0.98)]" />
                         </label>
                         <div className="dropdown dropdown-end">
-                            <div tabIndex={0} role="button" className="btn btn-ghost avatar">
+                            <div tabIndex={0} role="button" className="avatar">
                                 <div className="w-12 rounded-full bg-[#0BE58A] relative">
                                     <HiOutlineUserCircle size={35} className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' />
                                 </div>
