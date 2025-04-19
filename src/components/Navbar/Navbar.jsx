@@ -4,8 +4,7 @@ import { HiOutlineUserCircle } from "react-icons/hi2";
 import { IoIosSearch } from "react-icons/io";
 const Navbar = () => {
     return (
-        <div>
-            <div className="navbar bg-base-100 my-[50px]">
+            <div className="navbar bg-base-100 my-[50px] p-0">
                 <div className="navbar-start lg:w-[41%] xl:w-[50%]">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,7 +21,7 @@ const Navbar = () => {
                             <li><a>Search</a></li>
                         </ul>
                     </div>
-                    <a className="ml-2 text-[32px] font-bold text-[#150B2B] font-lexend">Recipe Calories</a>
+                    <a className="ml-2 sm:text-[27px] text-[32px] font-bold text-[#150B2B] font-lexend">Recipe Calories</a>
                 </div>
 
                 <div className="navbar-center hidden lg:flex">
@@ -38,9 +37,9 @@ const Navbar = () => {
 
                 <div className="navbar-end">
                     <div className="flex gap-4 items-center">
-                        <label className="input border-none w-24 md:w-auto rounded-full bg-[rgba(21,11,43,0.05)] pl-6 py-3 pr-[30px] flex items-center gap-2 h-12">
-                            <IoIosSearch size={24} />
-                            <input type="text" placeholder="Search" className="placeholder:text-base font-lexend placeholder:text-[rgba(21,11,43,0.98)]" />
+                        <label className="input border-none sm:w-48 md:w-auto w-24 rounded-full bg-[rgba(21,11,43,0.05)] pl-6 sm:pr-0 pr-[30px] flex items-center gap-2 sm:h-11 h-12">
+                            <IoIosSearch size={24} className='sm: h-[18px]'/>
+                            <input type="text" placeholder="Search" className="sm:placeholder:text-md placeholder:text-base font-lexend placeholder:text-[rgba(21,11,43,0.98)]" />
                         </label>
                         <div className="dropdown dropdown-end">
                             <div tabIndex={0} role="button" className="avatar">
@@ -64,7 +63,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </div>
 
     );
 };
