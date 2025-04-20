@@ -1,5 +1,4 @@
 import React from 'react';
-import './Navbar.css';
 import { HiOutlineUserCircle } from "react-icons/hi2";
 import { IoIosSearch } from "react-icons/io";
 const Navbar = () => {

@@ -1,0 +1,98 @@
+[
+    {
+      "recipe_id": 1,
+      "recipe_name": "Spicy Thai Basil Chicken",
+      "recipe_image": "https://i.ibb.co.com/k206XrLD/baked-chicken-wings-asian-style-tomatoes-sauce-plate.jpg",
+      "short_description": "A flavorful and spicy Thai chicken dish with fresh basil leaves.",
+      "ingredients": [
+        "550 g chicken",
+        "120 ml soy sauce",
+        "200 g basil leaf",
+        "400 g mushroom",
+        "3 cloves garlic",
+        "2 red chilies"
+      ],
+      "preparing_time": "30 min",
+      "calories": "320 calories"
+    },
+    {
+      "recipe_id": 2,
+      "recipe_name": "Creamy Mushroom Pasta",
+      "recipe_image": "https://i.ibb.co.com/mCV4YFrf/ai-generated-pasta.jpg",
+      "short_description": "Rich and creamy pasta loaded with mushrooms and herbs.",
+      "ingredients": [
+        "300 g pasta",
+        "250 g mushroom",
+        "150 ml heavy cream",
+        "50 g parmesan cheese",
+        "2 tbsp olive oil",
+        "1 tsp black pepper"
+      ],
+      "preparing_time": "25 min",
+      "calories": "450 calories"
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "Grilled Lemon Salmon",
+      "recipe_image": "https://i.ibb.co.com/G3rTTFYP/roasted-salmon.jpg",
+      "short_description": "Fresh salmon fillets grilled with lemon and herbs.",
+      "ingredients": [
+        "400 g salmon fillet",
+        "1 lemon",
+        "2 tbsp olive oil",
+        "1 tsp dill",
+        "Salt to taste",
+        "Pepper to taste"
+      ],
+      "preparing_time": "20 min",
+      "calories": "370 calories"
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "Vegetable Stir Fry",
+      "recipe_image": "https://i.ibb.co.com/chHwJJFx/stir-fry-chicken-sweet-peppers-green-beans.jpg",
+      "short_description": "Colorful mix of veggies stir-fried in a savory sauce.",
+      "ingredients": [
+        "100 g broccoli",
+        "100 g carrot",
+        "100 g bell pepper",
+        "2 tbsp soy sauce",
+        "1 tbsp sesame oil",
+        "1 clove garlic"
+      ],
+      "preparing_time": "15 min",
+      "calories": "220 calories"
+    },
+    {
+      "recipe_id": 5,
+      "recipe_name": "Classic Beef Burger",
+      "recipe_image": "https://i.ibb.co.com/0yKYLvmF/meat-burger-cheese-tomato-beans-onion-side-view.jpg",
+      "short_description": "Juicy beef patty served with fresh veggies in a soft bun.",
+      "ingredients": [
+        "200 g ground beef",
+        "1 burger bun",
+        "2 slices tomato",
+        "1 lettuce leaf",
+        "1 slice cheese",
+        "1 tbsp mayonnaise"
+      ],
+      "preparing_time": "20 min",
+      "calories": "500 calories"
+    },
+    {
+      "recipe_id": 6,
+      "recipe_name": "Mango Smoothie",
+      "recipe_image": "https://i.ibb.co.com/Wppkb98s/delicious-mango-still-life.jpg",
+      "short_description": "Refreshing mango smoothie with yogurt and honey.",
+      "ingredients": [
+        "1 ripe mango",
+        "100 ml yogurt",
+        "1 tbsp honey",
+        "50 ml milk",
+        "Ice cubes"
+      ],
+      "preparing_time": "10 min",
+      "calories": "180 calories"
+    }
+  ]
+  
