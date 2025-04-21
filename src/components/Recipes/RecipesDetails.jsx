@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Recipe from "./Recipe";
+import Table from "../Table/Table";
 
 const RecipesDetails = () => {
     const [recipes, setRecipes] = useState([]);
@@ -23,7 +24,7 @@ const RecipesDetails = () => {
 
     return (
         <div className="flex">
-            <div className="flex flex-wrap gap-6">
+            <div className="flex flex-wrap gap-6 max-w-[60%]">
                 {
                     recipes.map(recipe => (
                         <Recipe key={recipe.recipe_id} recipe={recipe}></Recipe>
@@ -31,7 +32,7 @@ const RecipesDetails = () => {
                 }
             </div>
             <div>
-
+                <Table></Table>
             </div>
         </div>
     );
