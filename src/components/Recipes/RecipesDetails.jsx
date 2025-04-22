@@ -4,6 +4,12 @@ import Table from "../Table/Table";
 
 const RecipesDetails = () => {
     const [recipes, setRecipes] = useState([]);
+    const [tableDatas, setTableDatas] = useState([]);
+
+    const handleRecipe = (recipe) => {
+        const newTableDatas = [...tableDatas, recipe]
+        setTableDatas(newTableDatas);
+    }
 
     useEffect(() => {
         const fetchData = async() => {
@@ -27,12 +33,12 @@ const RecipesDetails = () => {
             <div className="flex flex-wrap gap-6 max-w-[60%]">
                 {
                     recipes.map(recipe => (
-                        <Recipe key={recipe.recipe_id} recipe={recipe}></Recipe>
+                        <Recipe key={recipe.recipe_id} recipe={recipe} handleRecipe={handleRecipe}></Recipe>
                     ))
                 }
             </div>
             <div>
-                <Table></Table>
+                <Table tableDatas={tableDatas}></Table>
             </div>
         </div>
     );

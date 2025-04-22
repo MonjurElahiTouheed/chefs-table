@@ -1,10 +1,9 @@
 import { LuClock3 } from "react-icons/lu";
 import { AiOutlineFire } from "react-icons/ai";
 
-const Recipe = ({ recipe }) => {
-    const { recipe_id, recipe_name, recipe_image, short_description, ingredients, preparing_time, calories } = recipe;
+const Recipe = ({ recipe , handleRecipe}) => {
+    const { recipe_name, recipe_image, short_description, ingredients, preparing_time, calories } = recipe;
     return (
-        <div>
             <div className="card bg-base-100 w-96 shadow-sm p-6 pb-[0] h-[786px]">
                 <figure className="rounded-2xl">
                     <img
@@ -27,11 +26,10 @@ const Recipe = ({ recipe }) => {
                             <p className='font-fira text-[rgba(40,40,40,0.8)] text-base flex items-center gap-2 w-[6    %]'><LuClock3 size={24}/> {preparing_time.slice(0,2)} minutes</p>
                             <p className="font-fira text-[rgba(40,40,40,0.8)] text-base flex items-center gap-2"><AiOutlineFire size={24}/> {calories.slice(0,3)} calories</p>
                         </div>
-                        <button className="btn border-none bg-[#0BE58A] text-xl text-[#150B2B] font-semibold font-lexend px-[28px] py-[23px] rounded-[50px] mt-6">Want to Cook</button>
+                        <button onClick={() => handleRecipe(recipe)} className="btn border-none bg-[#0BE58A] text-xl text-[#150B2B] font-semibold font-lexend px-[28px] py-[23px] rounded-[50px] mt-6">Want to Cook</button>
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 
