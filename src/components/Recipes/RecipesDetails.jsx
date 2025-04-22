@@ -38,7 +38,7 @@ const RecipesDetails = () => {
                 }
             </div>
             <div>
-                <Table tableDatas={tableDatas}></Table>
+                <Table tableDatas={tableDatas} setTableDatas={setTableDatas}></Table>
             </div>
         </div>
     );

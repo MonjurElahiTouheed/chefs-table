@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Table = ({ tableDatas }) => {
+const Table = ({ tableDatas, setTableDatas }) => {
 
     const [cookings, setCookings] = useState([]);
     const [cookingTotal, setCookingTotal] = useState(0);
@@ -8,6 +8,10 @@ const Table = ({ tableDatas }) => {
 
     const handlePreparing = tableData => {
         setCookings([...cookings, tableData]);
+        // console.log(tableData)
+        const removedItemCookings = tableDatas.filter(cookingId =>  cookingId.recipe_id !== tableData.recipe_id);
+        console.log(removedItemCookings)
+        setTableDatas(removedItemCookings);
     }
 
     useEffect(() => {
