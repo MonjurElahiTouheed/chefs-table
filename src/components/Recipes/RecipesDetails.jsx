@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
 import Recipe from "./Recipe";
 import Table from "../Table/Table";
 
@@ -7,26 +8,32 @@ const RecipesDetails = () => {
     const [tableDatas, setTableDatas] = useState([]);
 
     const handleRecipe = (recipe) => {
-        const newTableDatas = [...tableDatas, recipe]
-        setTableDatas(newTableDatas);
+        const isExist = tableDatas.find(tableData => tableData.recipe_id === recipe.recipe_id);
+        console.log(isExist);
+        if(!isExist){
+            setTableDatas([...tableDatas, recipe]);
+        }
+        else{
+            toast.error('Already Exists')
+        }
     }
 
     useEffect(() => {
-        const fetchData = async() => {
+        const fetchData = async () => {
             try {
                 const res = await fetch('recipes.json');
                 const data = await res.json();
                 console.log(data)
-            setRecipes(data);
+                setRecipes(data);
+            }
+            catch (error) {
+                console.log(error);
+            }
         }
-        catch(error) {
-            console.log(error);
-        }
-    } 
-    fetchData();
-}, [])
+        fetchData();
+    }, [])
 
-// console.log(data)
+    // console.log(data)
 
     return (
         <div className="flex">
