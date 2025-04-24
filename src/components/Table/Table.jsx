@@ -15,7 +15,7 @@ const Table = ({ tableDatas, setTableDatas }) => {
 
     useEffect(() => {
         cookings.map(cookingData => {
-            const newTotalCookingTime = cookingTotal + parseInt(cookingData.preparing_time.slice(0, 2));
+            const newTotalCookingTime = cookingTotal + parseInt(cookingData.preparing_time.split(' ')[0]);
             setCookingTotal(newTotalCookingTime)
         })
 
@@ -25,7 +25,7 @@ const Table = ({ tableDatas, setTableDatas }) => {
         // })
         // using Reduce array method
         const newCaloriesTotal = cookings.reduce((accum, cookingData) => {
-            return accum + parseInt(cookingData.calories.slice(0, 3))
+            return accum + parseInt(cookingData.calories.split(' ')[0])
         }, 0);
 
         setCaloriesTotal(newCaloriesTotal)
@@ -55,8 +55,8 @@ const Table = ({ tableDatas, setTableDatas }) => {
                                     <tr className='border-0 bg-[rgba(40,40,40,0.03)]'>
                                         <th className='text-[rgba(40,40,40,0.8)] pl-6 pr-3'>{index + 1}</th>
                                         <td className="px-3 font-fira text-base text-[rgba(40,40,40,0.7)] leading-[26px]">{tableData?.recipe_name}</td>
-                                        <td className="px-3 font-fira text-base text-[rgba(40,40,40,0.7)] leading-[26px]">{tableData?.preparing_time.slice(0, 2)} minutes</td>
-                                        <td className="px-3 font-fira text-base text-[rgba(40,40,40,0.7)] leading-[26px]">{tableData?.calories.slice(0, 3)} calories</td>
+                                        <td className="px-3 font-fira text-base text-[rgba(40,40,40,0.7)] leading-[26px]">{tableData?.preparing_time.split(' ')[0]} minutes</td>
+                                        <td className="px-3 font-fira text-base text-[rgba(40,40,40,0.7)] leading-[26px]">{tableData?.calories.split(' ')[0]} calories</td>
                                         <td className="pl-3 pr-6"><button onClick={() => handlePreparing(tableData)} className='btn bg-[#0BE58A] text-[#150B2B] text-base font-medium rounded-full px-[18px] py-[9px]'>Preparing</button></td>
                                     </tr>
                                 ))

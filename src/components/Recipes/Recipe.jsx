@@ -23,8 +23,8 @@ const Recipe = ({ recipe , handleRecipe}) => {
                     </div>
                     <div className="">
                         <div className='flex gap-4'>
-                            <p className='font-fira text-[rgba(40,40,40,0.8)] text-base flex items-center gap-2 w-[6    %]'><LuClock3 size={24}/> {preparing_time.slice(0,2)} minutes</p>
-                            <p className="font-fira text-[rgba(40,40,40,0.8)] text-base flex items-center gap-2"><AiOutlineFire size={24}/> {calories.slice(0,3)} calories</p>
+                            <p className='font-fira text-[rgba(40,40,40,0.8)] text-base flex items-center gap-2 w-[6    %]'><LuClock3 size={24}/> {preparing_time.split(' ')[0]} minutes</p>
+                            <p className="font-fira text-[rgba(40,40,40,0.8)] text-base flex items-center gap-2"><AiOutlineFire size={24}/> {calories.split(' ')[0]} calories</p>
                         </div>
                         <button onClick={() => handleRecipe(recipe)} className="btn border-none bg-[#0BE58A] text-xl text-[#150B2B] font-semibold font-lexend px-[28px] py-[23px] rounded-[50px] mt-6">Want to Cook</button>
                     </div>
