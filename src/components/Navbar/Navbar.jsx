@@ -20,7 +20,7 @@ const Navbar = () => {
                             <li><a>Search</a></li>
                         </ul>
                     </div>
-                    <a className="ml-2 sm:text-[27px] text-[32px] font-bold text-[#150B2B] font-lexend">Recipe Calories</a>
+                    <a className="ml-2 text-[27px] sm:text-[29px] md:text-[32px] font-bold text-[#150B2B] font-lexend">Recipe Calories</a>
                 </div>
 
                 <div className="navbar-center hidden lg:flex">
@@ -36,8 +36,8 @@ const Navbar = () => {
 
                 <div className="navbar-end">
                     <div className="flex gap-4 items-center">
-                        <label className="input border-none sm:w-48 md:w-auto w-24 rounded-full bg-[rgba(21,11,43,0.05)] pl-6 sm:pr-0 pr-[30px] flex items-center gap-2 sm:h-11 h-12">
-                            <IoIosSearch size={24} className='sm: h-[18px]'/>
+                        <label className="input border-none w-36 sm:w-auto rounded-full bg-[rgba(21,11,43,0.05)] pl-6 pr-0 flex items-center gap-2 h-12">
+                            <IoIosSearch size={24} className='sm:h-[18px]'/>
                             <input type="text" placeholder="Search" className="sm:placeholder:text-md placeholder:text-base font-lexend placeholder:text-[rgba(21,11,43,0.98)]" />
                         </label>
                         <div className="dropdown dropdown-end">

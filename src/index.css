@@ -6,6 +6,10 @@
  themes: light --default;
 }
 
+@theme {
+  --breakpoint-xxs: 20rem;
+  --breakpoint-xs: 30rem;
+}
 
 .font-lexend {
     font-family: "Lexend", sans-serif;

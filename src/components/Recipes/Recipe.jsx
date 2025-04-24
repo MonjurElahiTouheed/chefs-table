@@ -4,13 +4,13 @@ import { AiOutlineFire } from "react-icons/ai";
 const Recipe = ({ recipe , handleRecipe}) => {
     const { recipe_name, recipe_image, short_description, ingredients, preparing_time, calories } = recipe;
     return (
-            <div className="card bg-base-100 w-96 shadow-sm p-6 pb-[0] h-[786px]">
+            <div className="card bg-base-100 w-full shadow-sm p-6">
                 <figure className="rounded-2xl">
                     <img
                         src={recipe_image}
                         alt="Shoes" />
                 </figure>
-                <div className="card-body p-0 m-6">
+                <div className="card-body p-0 mt-6">
                     <h2 className="card-title text-xl text-[#282828] font-lexend">{recipe_name}</h2>
                     <p className='font-fira text-[#878787] text-base my-4'>{short_description}</p>
                     <div className='border-t-1 border-b-1 border-[rgba(40,40,40,0.1)] pt-6 pb-4'>
